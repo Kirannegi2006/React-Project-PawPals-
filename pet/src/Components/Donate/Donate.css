@@ -1,0 +1,98 @@
+.donate-section {
+  background-color: #fffaf5;
+  padding: 50px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+ margin: 40px;
+}
+
+.donate-container {
+  max-width: 700px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.donate-container h1 {
+  color: #570021;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.donate-container h2 {
+  color: #7a0044;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.donate-container p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.donate-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.donate-form input,
+.donate-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.donate-form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.donate-form button {
+  padding: 10px;
+  background-color: #570021;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.donate-form button:hover {
+  background-color: #7a0044;
+}
+
+.balloons {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  transform: translate(-50%, -50%);
+  animation: floatUp 3s ease-out forwards;
+  z-index: 999;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -150%);
+    opacity: 0;
+  }
+}
+
+.do-background {
+  background-image: url('../../assets/Donate.png'); /* This works only if image is not imported in JS */
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 1px;
+}

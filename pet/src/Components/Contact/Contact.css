@@ -1,0 +1,15 @@
+.contact-left {
+  background-color: #ea3e4e;
+
+  
+}
+.mb-4{
+  margin-left: 50px;
+}
+.contact-left p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
