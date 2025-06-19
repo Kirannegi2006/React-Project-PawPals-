@@ -1,4 +1,11 @@
 
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
 .background-video {
   position: fixed;
   top: 0;
@@ -14,6 +21,8 @@
   position: relative;
   z-index: 1;
   padding: 100px 0;
+ 
+
 }
 
 .hero-content .container {

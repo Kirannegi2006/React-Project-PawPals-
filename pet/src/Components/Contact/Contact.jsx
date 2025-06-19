@@ -26,7 +26,6 @@ export default function Contact() {
       <div className='container my-5'>
         <div className='row shadow-lg rounded-3 overflow-hidden'>
 
-          
           <div className='col-md-6 p-4 contact-left text-white'>
             <h3 className='mb-4'>Contact Us</h3>
             <p><FaMapMarkerAlt className='me-2' />Malviya Nagar</p>
@@ -34,20 +33,18 @@ export default function Contact() {
             <p><FaPhoneAlt className='me-2' />+91 7819 xxxx</p>
           </div>
 
-          {/* Right Contact Form */}
           <div className='col-md-6 p-5 bg-white contact-right'>
             <h3 className='text-dark mb-2'>Get in Touch</h3>
             <p className='text-muted mb-4'>Feel free to drop us a line below!</p>
 
             <form
-             action="https://formsubmit.co/el/wihore"
-
+              action="https://api.web3forms.com/submit"
               method="POST"
-              target="_self"
               onSubmit={handleSubmit}
             >
-              
-  <input type="hidden" name="_formsubmit_id" value="" />
+             
+              <input type="hidden" name="access_key" value="777b7d45-611b-4bab-9ced-f5053a2f332d" />
+
               <input
                 type="text"
                 name="name"
@@ -59,7 +56,7 @@ export default function Contact() {
               />
               <input
                 type="email"
-                 name="email"
+                name="email"
                 value={formData.email}
                 onChange={handleChange}
                 className="form-control mb-3"
@@ -76,11 +73,8 @@ export default function Contact() {
                 required
               ></textarea>
 
-              {/* Hidden inputs */}
-              <input type="hidden" name="_subject" value="📩 New message from your website!" />
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_template" value="table" />
-              <input type="hidden" name="_next" value="https://pawpals-care.netlify.app/thanks" />
+              <input type="hidden" name="subject" value="📩 New message from Contact Form!" />
+              <input type="hidden" name="redirect" value="https://pawpals-care.netlify.app/thanks" />
 
               <button type="submit" className="btn btn-danger w-100 rounded-pill">SEND</button>
 

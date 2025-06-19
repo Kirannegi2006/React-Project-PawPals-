@@ -1,19 +1,21 @@
-
 .navbaar {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  position: relative;
-  z-index: 999;
+  padding: 15px 20px;
 }
 
 .nav-left {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .logo-link {
@@ -27,10 +29,9 @@
   width: 30px;
   height: 30px;
   cursor: pointer;
-  display: none; 
+  display: none;
 }
 
-/* Nav items */
 .nav-right {
   display: flex;
   align-items: center;
@@ -53,28 +54,27 @@
 .nav-right button {
   padding: 8px 16px;
   border: none;
-  background-color:#570021;
+  background-color: #570021;
   color: white;
   border-radius: 5px;
   cursor: pointer;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
   }
 
   .nav-right {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: white;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    padding: 20px;
+    padding: 15px 20px;
     display: none;
+    background-color: #fff;
+    position: absolute;
+    top: 65px;
+    left: 0;
   }
 
   .nav-right.active {
@@ -83,12 +83,13 @@
 
   .nav-right ul {
     flex-direction: column;
+    gap: 10px;
     width: 100%;
   }
 
   .nav-right ul li {
-    padding: 10px 0;
     width: 100%;
+    padding: 10px 0;
   }
 
   .nav-right button {

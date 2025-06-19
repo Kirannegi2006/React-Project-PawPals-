@@ -20,7 +20,7 @@ export default function Navbaar() {
       <div className={`nav-right ${menuOpen ? 'active' : ''}`}>
         <ul>
           <Link to='/' className="no-style-link" onClick={() => setMenuOpen(false)}><li>Home</li></Link> 
-  <Link to='/about' className="no-style-link" onClick={() => setMenuOpen(false)}><li>About Us</li></Link> 
+  <Link to='/about' className="no-style-link" onClick={() => setMenuOpen(false)}><li>About</li></Link> 
   <Link to='/Gallery' className="no-style-link" onClick={() => setMenuOpen(false)}><li>Gallery</li></Link>
   <Link to='/community' className="no-style-link" onClick={() => setMenuOpen(false)}><li>Community</li></Link>
   <Link to='/blog' className="no-style-link" onClick={() => setMenuOpen(false)}><li>Blog</li></Link>
